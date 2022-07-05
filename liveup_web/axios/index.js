@@ -1,8 +1,8 @@
 import axios from 'axios'
 import { toast } from 'react-toastify';
 
-const LOCAL_API_URL = 'http://127.0.0.1:8000/api/v1/'
-const HOSTED_API_URL = 'https://nehe-liveup-api.herokuapp.com/api/v1/'
+const LOCAL_API_URL = process.env.API_URL || 'http://127.0.0.1:8000/api/v1/'
+const HOSTED_API_URL = process.env.API_URL_BROWSER || 'http://142.132.174.17:8001'
 const CURRENT_API_URL = HOSTED_API_URL
 
 const instance = axios.create({
