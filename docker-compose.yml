@@ -42,8 +42,8 @@ services:
   nextjs:
     build: ./liveup_web/
     environment:
-      - API_URL: "http://api:8000"
-      - API_URL_BROWSER: "http://142.132.174.17:8000"
+      - API_URL="http://api:8000"
+      - API_URL_BROWSER="http://142.132.174.17:8000"
     ports:
       - "3000:3000"
 
