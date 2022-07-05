@@ -5,6 +5,7 @@ services:
     image: raesene/alpine-nettools
 
   nginx:
+    build: ./nginx
     restart: always
     volumes:
       - ./nginx/default.conf:/etc/nginx/nginx.conf
